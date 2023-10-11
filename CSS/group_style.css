@@ -1,0 +1,154 @@
+/* body {
+  background-size: cover;
+  background-image: url("../Media/welsh_flag.jpg");
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 100vh;
+} */
+
+
+/*
+@font-face {
+    font-family: 'CelticFont';
+    src: url(../fonts/KR Keltic One.TTF) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+header {
+    width: 100%;
+    background-image: url("../Media/welsh_countryside.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    text-align: center;
+    margin: 0vh, 0vw;
+    padding: 0vh, 0vw;
+}
+
+nav {
+  background-color: red;
+  height: 5vh;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display items horizontally */
+}
+
+nav li a {
+  padding: 10px 20px;
+  color: green;
+}
+
+nav a:hover {
+    color: white;
+    background-color: green; /* Background color on hover */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Add padding for spacing */
+}
+
+.text {
+    flex: 2; /* Takes up 2/3 of the width */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.image {
+    flex: 1; /* Takes up 1/3 of the width */
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Optional: Adjust styles for image size */
+.image img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+/*style for contact banner*/
+
+/*
+.contact {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: green;
+  text-align: center;
+}
+*/
+
+.bottom-container {
+  margin: bottom: 0;
+    background-color: green;
+    height: 5em;
+    display: flex;
+    text-align: center;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    align-items: center;
+}
+
+  .copyright {
+    display: block;
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Gabarito', cursive;
+    font-family: 'Montserrat', sans-serif;
+    border-color: grey;
+}
+
+.bottom-container a {
+ text-decoration: none;
+ font-family: 'Gabarito', cursive;
+ color: #DF4661;
+}
+
+.footer-link1 {
+  border-right: solid;
+  border-color: grey;
+  align-self: center;
+  flex: 1;
+}
+
+.footer-link2 {
+  border-right: solid;
+  border-color: grey;
+  align-items: center;
+  flex: 1;
+}
+
+.footer-link3 {
+  align-items: center;
+  flex: 1;
+}
+
+button {
+  background-color: #DF4661;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: white;
+  color: #DF4661;
+  border-style: solid;
+  border-radius: 6px;
+}

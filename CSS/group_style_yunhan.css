@@ -1,0 +1,100 @@
+body {
+  border-left: 100px solid black;
+  border-right: 100px solid black;
+}
+
+@font-face {
+    font-family: 'CelticFont';
+    src: url(../fonts/KR Keltic One.TTF) format('truetype');
+    /* You can include more font formats if desired */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.banner_area {
+    background-image: url("../media/welsh_countryside.jpg")
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Add padding for spacing */
+}
+
+.text, .brecon, .gower, .snowdonia{
+    flex: 2; /* Takes up 2/3 of the width */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.image, .brecon, .gower, .snowdonia {
+    flex: 1; /* Takes up 1/3 of the width */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.image, .wye_valley, .pembrokeshire {
+    flex: 1; /* Takes up 1/3 of the width */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.text, .wye_valley, .pembrokeshire {
+    flex: 2; /* Takes up 2/3 of the width */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.banner_menu{ 
+    width: 100%; 
+    height: 5em; 
+    /* background-color: antiquewhite; */ 
+}
+.menu{ 
+    width: 80%;
+    height: 5em; 
+    margin: 0px auto; 
+    /* background-color: aquamarine;  */
+}
+.menu ul{
+    list-style-type: none; 
+    /* background-color: antiquewhite;  */
+}
+.menu>ul>li{ 
+    display: inline-block; 
+    line-height: 5em;     
+    position: relative; 
+}
+.menu ul li a{ 
+    text-decoration: none; 
+    color: black; 
+    text-align: center; 
+    padding: 0px 0.5em; 
+}
+.menu ul li ul{ 
+    width: 10em;
+    position: absolute; 
+    display: none; 
+    left: -2.5em;
+}
+.menu ul li:hover ul{ 
+    display: block; 
+    background-color: antiquewhite;
+}
+.menu ul li a:hover{ 
+    color: brown;
+    text-decoration: underline;
+}
+.menu ul li:hover{
+    color: brown;
+    text-decoration: underline;
+}
+
+/* Optional: Adjust styles for image size */
+.image img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+
+#brecon
