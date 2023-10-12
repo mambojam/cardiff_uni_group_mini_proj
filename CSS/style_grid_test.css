@@ -1,0 +1,146 @@
+body {
+  margin:auto;
+  width: 80%;
+}
+
+@media (max-width: 1100px) {
+  body {
+    width: 100%
+  }
+}
+
+.header {
+    width: 100%;
+    background-image: url("../Media/welsh_countryside.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    text-align: center;
+}
+
+nav {
+  background-color: red;
+  height: 5vh;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display items horizontally */
+  justify-content: space-around;
+
+}
+
+nav li a {
+  color: green;
+}
+
+nav a:hover {
+    color: white;
+    background-color: green; /* Background color on hover */
+}
+
+.container p {
+  font-size:1em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns for wide screens */
+
+    /* Additional styles for spacing and responsiveness */
+    padding: 20px;
+    margin: 20px;
+}
+
+.content {
+    padding: 10px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2vw;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1100px) {
+    .container {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+}
+
+.bottom-container {
+  margin: bottom: 0;
+    background-color: green;
+    height: 5em;
+    display: flex;
+    text-align: center;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    align-items: center;
+}
+
+  .copyright {
+    display: block;
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Gabarito', cursive;
+    font-family: 'Montserrat', sans-serif;
+    border-color: grey;
+}
+
+.bottom-container a {
+ text-decoration: none;
+ font-family: 'Gabarito', cursive;
+ color: #DF4661;
+}
+
+.footer-link1 {
+  border-right: solid;
+  border-color: grey;
+  align-self: center;
+  flex: 1;
+}
+
+.footer-link2 {
+  border-right: solid;
+  border-color: grey;
+  align-items: center;
+  flex: 1;
+}
+
+.footer-link3 {
+  align-items: center;
+  flex: 1;
+}
+
+button {
+  background-color: #DF4661;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: white;
+  color: #DF4661;
+  border-style: solid;
+  border-radius: 6px;
+}
