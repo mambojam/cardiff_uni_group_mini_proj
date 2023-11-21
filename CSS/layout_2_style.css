@@ -1,0 +1,36 @@
+
+header, footer {
+  border: 1px solid blue;
+  height: 10vh;
+  margin: 1%;
+}
+
+section {
+  border: 1px solid green;
+  display: flex;
+  height: 80vh;
+  margin: 1%;
+  padding: 1%;
+}
+
+nav {
+  border: 1px dashed red;
+  width: 20vw;
+}
+
+main {
+  border: 1px dashed black;
+  width: 80vw;
+}
+
+@media(max-width: 800px){
+  section {
+    flex-direction: column;
+  }
+  nav, main {
+    width: 100%;
+  }
+  main {
+    height: 100%;
+  }
+}
